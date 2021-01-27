@@ -400,10 +400,6 @@ Note: The following represents five masks to be used after the picture stimulus
 </include>
 
 <include>
-/ file = "schizotypyQuestionnaire.iqx"
-</include>
-
-<include>
 /file = "include_surveypage_inputs.iqx"
 </include>
 
