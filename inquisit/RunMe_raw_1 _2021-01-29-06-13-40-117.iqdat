@@ -1,0 +1,59 @@
+build	date	time	subject	blockcode	blocknum	trialcode	trialnum	stimulusonset1	values.est_soa	values.est_soa2	values.est_soa3	values.est_soa4	values.est_soa5	values.img_num	values.img_file	values.soa	values.completion_code	response	latency	values.OLIFE_subscale_1_score	values.OLIFE_subscale_2_score	values.OLIFE_subscale_3_score	values.OLIFE_subscale_4_score
+5.0.14.0	012921	17:13:40	1 	calibration	3	calibration_instruction_page1	1	160	0	0	0	0	0	0		0		57	205	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	calibration	3	calibration_instruction_page2	2	12	0	0	0	0	0	0		0		57	294	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	calibration	3	calibration_operate	3	10	0	0	0	0	0	0		0		57	347	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	practice_pic_133soa	1	0	134	66	50	67	50	2	40RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d1	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		aaa	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d2	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		a	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d3	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		a	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d4	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		a	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d5	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		a	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb1	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		Don't Know	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb2	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		Don't Know	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb3	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		Don't Know	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb4	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		Don't Know	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb5	2	0	134	66	50	67	50	2	40RandomDots.jpg	133		Don't Know	11673	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	practice_pic_133soa	3	0	134	66	50	67	50	1	30RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d1	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		n	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d2	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		n	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d3	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		n	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d4	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		n	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d5	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		n	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb1	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		Don't Know	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb2	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		Don't Know	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb3	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		Don't Know	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb4	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		Guess	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb5	4	0	134	66	50	67	50	1	30RandomDots.jpg	133		Don't Know	4663	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	practice_pic_133soa	5	0	134	66	50	67	50	3	50RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d1	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		j	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d2	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		j	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d3	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		j	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d4	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		j	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	d5	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		j	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb1	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		Don't Know	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb2	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		Don't Know	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb3	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		Don't Know	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb4	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		Don't Know	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	practice_block	4	rb5	6	0	134	66	50	67	50	3	50RandomDots.jpg	133		Don't Know	3932	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	pic_133soa	1	0	634	66	50	67	50	2	10RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d1	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		n	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d2	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		k	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d3	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		jh	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d4	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		g	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d5	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		h	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb1	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		Don't Know	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb2	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		Don't Know	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb3	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		Don't Know	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb4	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		Don't Know	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb5	2	0	634	66	50	67	50	2	10RandomDots.jpg	133		Don't Know	5209	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	pic_133soa	3	0	634	66	50	67	50	8	70RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d1	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d2	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d3	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d4	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	d5	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb1	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb2	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb3	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb4	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0
+5.0.14.0	012921	17:13:40	1 	block1	5	rb5	4	0	634	66	50	67	50	8	70RandomDots.jpg	133			1762	0	0	0	0

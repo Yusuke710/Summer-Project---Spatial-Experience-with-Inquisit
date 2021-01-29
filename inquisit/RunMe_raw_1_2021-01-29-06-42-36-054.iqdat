@@ -1,0 +1,15 @@
+build	date	time	subject	blockcode	blocknum	trialcode	trialnum	stimulusonset1	values.est_soa	values.est_soa2	values.est_soa3	values.est_soa4	values.est_soa5	values.img_num	values.img_file	values.soa	values.completion_code	response	latency	values.OLIFE_subscale_1_score	values.OLIFE_subscale_2_score	values.OLIFE_subscale_3_score	values.OLIFE_subscale_4_score
+5.0.14.0	012921	17:42:36	1	calibration	3	calibration_instruction_page1	1	7	0	0	0	0	0	0		0		57	369	0	0	0	0
+5.0.14.0	012921	17:42:36	1	calibration	3	calibration_instruction_page2	2	7	0	0	0	0	0	0		0		57	178	0	0	0	0
+5.0.14.0	012921	17:42:36	1	calibration	3	calibration_operate	3	8	0	0	0	0	0	0		0		57	211	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	practice_pic_133soa	1	0	134	66	50	67	50	2	40RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	d1	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	d2	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	d3	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	d4	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	d5	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	rb1	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	rb2	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	rb3	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	rb4	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0
+5.0.14.0	012921	17:42:36	1	practice_block	4	rb5	2	0	134	66	50	67	50	2	40RandomDots.jpg	133			18497	0	0	0	0

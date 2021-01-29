@@ -549,7 +549,7 @@ NOTE: The 11 questions onwards are text to be displayed.
 <trial pic_133soa>
 / stimulustimes = [
 	0 = fixation_cross;
-	1000 = gdg_133soa;
+	500 = gdg_133soa;
 	1133 = mask1;
 	1193 = mask2;
 	1253 = mask3;
