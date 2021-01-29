@@ -1,0 +1,57 @@
+﻿**************************************************************************************************************
+**************************************************************************************************************
+	EDITABLE PARAMETERS: change editable parameters here
+**************************************************************************************************************
+**************************************************************************************************************
+
+<parameters>
+/fixationduration = 1000
+/is_mturk = true
+/experiment_id = "GIST_BATCH_V1_133_1_02_MT"
+/skip_practice = false
+/skip_demographics = false
+/show_completion_block = false
+</parameters>
+
+<variables>
+/ group = (1 of 1) (items_133soa = picset_133_1_02)
+/ groupassignment = groupnumber
+</variables>
+
+**************************************************************************************************************
+**************************************************************************************************************
+	EDITABLE STIMULI: change editable stimuli here
+**************************************************************************************************************
+**************************************************************************************************************
+
+Note: The following needs to be generated using helper-scripts, otherwise you will be typing all day - see helper-scripts generate-inquisit-random_preconfigure.py
+
+***********************
+***********************
+
+
+
+<item picset_133_1_02>
+/1="3RandomDots.jpg"
+/2="10RandomDots.jpg"
+/3="20RandomDots.jpg"
+/4="30RandomDots.jpg"
+/5="40RandomDots.jpg"
+/6="50RandomDots.jpg"
+/7="60RandomDots.jpg"
+/8="70RandomDots.jpg"
+/9="80RandomDots.jpg"
+/10="90RandomDots.jpg"
+/11="100RandomDots.jpg"
+
+</item>
+
+
+
+<include>
+/ file = "experiment_settings.iqx"
+</include>
+
+**************************************************************************************************************
+												End of File
+**************************************************************************************************************
