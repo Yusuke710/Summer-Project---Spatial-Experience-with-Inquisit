@@ -116,15 +116,11 @@ Note: The following needs to be generated using helper-scripts, otherwise you wi
 </htmlpage>
 
 <item directions>
-/1 = "Going back to the image that you just saw, what words (nouns, verbs, adjectives) would you use to describe what you saw?"
-/2 = "Referring to the image that you just saw, what words would you use to describe your impression of the image?"
+/1 = "Reffering to the image that you just saw, please answer the following questions. You are required to answer all questions"
 </item>
 
 <item word_guidelines>
-/1 = "1. Must be a non-repeat and valid English word."
-/2 = "2. Nouns (e.g. ball, cat, apple), Verbs (e.g. run, play, jump), Adjectives (e.g. calm, exciting, beautiful)"
-/3 = "3. Please use the character '-' if you enter a phrase with spaces, for e.g. sunny-afternoon"
-/4 = "If you are unable to come up with all 5 words, please enter arbitrary words and select the button 'Don't Know' for the rest."
+/1 = "1. Please use the character '-' if you enter a phrase with spaces, for e.g. sunny-afternoon"
 </item>
 
 <item labels>
@@ -343,32 +339,14 @@ Note: The following represents five masks to be used after the picture stimulus
 
 <caption input_words_guideline_0>
 / caption = "For a guide, here are the kind of words that you may enter:"
-/ position = (values.first_col, values.textbox_offset - 23)
+/ position = (values.first_col, values.textbox_offset - 13)
 / fontstyle = ("Arial", 2%, false, false, false, false, 5, 0)
 </caption>
 
 <caption input_words_guideline_1>
 / caption = "<% item.word_guidelines.item(1) %>"
-/ position = (values.first_col, values.textbox_offset - 20)
+/ position = (values.first_col, values.textbox_offset - 10)
 / fontstyle = ("Arial", 2%, false, false, false, false, 5, 0)
-</caption>
-
-<caption input_words_guideline_2>
-/ caption = "<% item.word_guidelines.item(2) %>"
-/ position = (values.first_col, values.textbox_offset - 17)
-/ fontstyle = ("Arial", 2%, false, false, false, false, 5, 0)
-</caption>
-
-<caption input_words_guideline_3>
-/ caption = "<% item.word_guidelines.item(3) %>"
-/ position = (values.first_col, values.textbox_offset - 14)
-/ fontstyle = ("Arial", 2%, false, false, false, false, 5, 0)
-</caption>
-
-<caption input_words_guideline_4>
-/ caption = "<% item.word_guidelines.item(4) %>"
-/ position = (values.first_col, values.textbox_offset - 11)
-/ fontstyle = ("Arial", 1.5%, false, false, false, false, 5, 0)
 </caption>
 
 **************************************************************************************************************
@@ -378,7 +356,7 @@ Note: The following represents five masks to be used after the picture stimulus
 **************************************************************************************************************
 
 <values>
-/textbox_offset = 40
+/textbox_offset = 30
 /textbox_gap = 5
 /textbox_width = 20
 /textbox_height = 4
@@ -386,8 +364,8 @@ Note: The following represents five masks to be used after the picture stimulus
 /second_col = 38
 
 /radiobuttons_offset = values.textbox_offset
-/radiobuttons_gap = 5
-/radiobuttons_textsize = 2%
+/radiobuttons_gap = 10
+/radiobuttons_textsize = 3%
 
 /OLIFE_subscale_1_score = 0
 /OLIFE_subscale_2_score = 0
@@ -407,17 +385,17 @@ Note: The following represents five masks to be used after the picture stimulus
 /file = "include_participant_demographics.iqx"
 </include>
 
-NOTE: 2=d2; 3=d3; 4=d4; 5=d5; 6=d6; 7=d7; 8=d8; 9=d9; 10=d10;
-NOTE: The 11 questions onwards are text to be displayed. 
+NOTE: word_generation is where we question the applicants after they see the stimulus
+NOTE: questions are in "include_surveypage_inout.iqx"
 <surveypage word_generation>
-/ caption = "<% item.directions.item(2) %>"
+/ caption = "<% item.directions.item(1) %>"
 / fontstyle =  ("Arial", 3%)
 / showquestionnumbers = false
 / showpagenumbers = false
-/ questions = [1=d1; 2=d2; 3=d3; 4=d4; 5=d5; 6=rb1; 7=rb2; 8=rb3; 9=rb4; 10=rb5; 11=input_words_guideline_0; 12=input_validation_instruction; 13=input_words_guideline_1; 14=input_words_guideline_2; 15=input_words_guideline_3; 16=input_words_guideline_4]
+/ questions = [1=rb1; 2=rb2; 3=t1; 4=t2; 5=input_words_guideline_0; 6=input_words_guideline_1;]
 / navigationbuttonsize = (20, 4)
 / navigationbuttonfontstyle = ("Arial", 2%, true, false, false, false, 5, 0)
-/ nextbuttonposition = (35%, values.textbox_offset + 8.5*values.textbox_gap)
+/ nextbuttonposition = (70%, values.textbox_offset + 11*values.textbox_gap)
 / finishlabel = "Next Trial"
 / response = correct
 </surveypage>
