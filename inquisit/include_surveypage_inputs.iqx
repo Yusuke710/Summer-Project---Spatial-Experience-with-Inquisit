@@ -19,11 +19,10 @@
 
 <textbox t1>
 / caption = "How many dots did you see?"
-/ maxchars = 100
 / position = (values.first_col, values.radiobuttons_offset + 2*values.radiobuttons_gap)
 / textboxsize = (values.textbox_width, values.textbox_height)
 / required=true
-/ mask = ^([a-zA-Z-]+)$
+/ mask = integer
 </textbox>
 
 

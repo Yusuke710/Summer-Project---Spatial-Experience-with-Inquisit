@@ -32,17 +32,17 @@ Note: The following needs to be generated using helper-scripts, otherwise you wi
 
 
 <item picset_133_1_02>
-/1="3RandomDots.jpg"
-/2="10RandomDots.jpg"
-/3="20RandomDots.jpg"
-/4="30RandomDots.jpg"
-/5="40RandomDots.jpg"
-/6="50RandomDots.jpg"
-/7="60RandomDots.jpg"
-/8="70RandomDots.jpg"
-/9="80RandomDots.jpg"
-/10="90RandomDots.jpg"
-/11="100RandomDots.jpg"
+/1= "./stimulus/3RandomDots.jpg"
+/2="./stimulus/10RandomDots.jpg"
+/3="./stimulus/20RandomDots.jpg"
+/4="./stimulus/30RandomDots.jpg"
+/5="./stimulus/40RandomDots.jpg"
+/6="./stimulus/50RandomDots.jpg"
+/7="./stimulus/60RandomDots.jpg"
+/8="./stimulus/70RandomDots.jpg"
+/9="./stimulus/80RandomDots.jpg"
+/10="./stimulus/90RandomDots.jpg"
+/11="./stimulus/100RandomDots.jpg"
 
 </item>
 

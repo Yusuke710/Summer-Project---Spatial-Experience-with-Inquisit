@@ -1,0 +1,24 @@
+build	date	time	subject	blockcode	blocknum	trialcode	trialnum	stimulusonset1	values.est_soa	values.est_soa2	values.est_soa3	values.est_soa4	values.est_soa5	values.img_num	values.img_file	values.soa	values.completion_code	response	latency	values.OLIFE_subscale_1_score	values.OLIFE_subscale_2_score	values.OLIFE_subscale_3_score	values.OLIFE_subscale_4_score
+5.0.14.0	020721	17:49:59	1	calibration	3	calibration_instruction_page1	1	7	0	0	0	0	0	0		0		57	588	0	0	0	0
+5.0.14.0	020721	17:49:59	1	calibration	3	calibration_instruction_page2	2	11	0	0	0	0	0	0		0		57	209	0	0	0	0
+5.0.14.0	020721	17:49:59	1	calibration	3	calibration_operate	3	7	0	0	0	0	0	0		0		57	408	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	practice_pic_133soa	1	0	934	66	50	67	50	3	./stimulus/50RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	rb1	2	0	934	66	50	67	50	3	./stimulus/50RandomDots.jpg	133		Yes	13261	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	rb2	2	0	934	66	50	67	50	3	./stimulus/50RandomDots.jpg	133		Yes	13261	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	t1	2	0	934	66	50	67	50	3	./stimulus/50RandomDots.jpg	133		34	13261	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	t2	2	0	934	66	50	67	50	3	./stimulus/50RandomDots.jpg	133		None	13261	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	practice_pic_133soa	3	0	934	66	50	67	50	2	./stimulus/40RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	rb1	4	0	934	66	50	67	50	2	./stimulus/40RandomDots.jpg	133		Yes	8611	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	rb2	4	0	934	66	50	67	50	2	./stimulus/40RandomDots.jpg	133		No	8611	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	t1	4	0	934	66	50	67	50	2	./stimulus/40RandomDots.jpg	133		45	8611	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	t2	4	0	934	66	50	67	50	2	./stimulus/40RandomDots.jpg	133		None	8611	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	practice_pic_133soa	5	0	934	66	50	67	50	1	./stimulus/30RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	rb1	6	0	934	66	50	67	50	1	./stimulus/30RandomDots.jpg	133		Yes	12391	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	rb2	6	0	934	66	50	67	50	1	./stimulus/30RandomDots.jpg	133		No	12391	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	t1	6	0	934	66	50	67	50	1	./stimulus/30RandomDots.jpg	133		45	12391	0	0	0	0
+5.0.14.0	020721	17:49:59	1	practice_block	4	t2	6	0	934	66	50	67	50	1	./stimulus/30RandomDots.jpg	133		tiger	12391	0	0	0	0
+5.0.14.0	020721	17:49:59	1	block1	5	pic_133soa	1	0	934	66	50	67	50	5	./stimulus/40RandomDots.jpg	133		0	67	0	0	0	0
+5.0.14.0	020721	17:49:59	1	block1	5	rb1	2	0	934	66	50	67	50	5	./stimulus/40RandomDots.jpg	133			180285	0	0	0	0
+5.0.14.0	020721	17:49:59	1	block1	5	rb2	2	0	934	66	50	67	50	5	./stimulus/40RandomDots.jpg	133			180285	0	0	0	0
+5.0.14.0	020721	17:49:59	1	block1	5	t1	2	0	934	66	50	67	50	5	./stimulus/40RandomDots.jpg	133			180285	0	0	0	0
+5.0.14.0	020721	17:49:59	1	block1	5	t2	2	0	934	66	50	67	50	5	./stimulus/40RandomDots.jpg	133			180285	0	0	0	0
