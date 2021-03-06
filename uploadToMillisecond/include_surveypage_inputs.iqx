@@ -1,0 +1,29 @@
+﻿
+
+<radiobuttons rb2>
+/ caption = "Did you see each dot on specific location?"
+/ options=("No", "Yes")
+/ required=true
+/ position = (values.first_col, values.radiobuttons_offset + 0*values.radiobuttons_gap)
+/ orientation = horizontal
+/ fontstyle = ("Arial", values.radiobuttons_textsize, false, false, false, false, 5, 0)
+</radiobuttons>
+
+<textbox t1>
+/ caption = "How many dots did you see?"
+/ position = (values.first_col, values.radiobuttons_offset + 1*values.radiobuttons_gap)
+/ textboxsize = (values.textbox_width, values.textbox_height)
+/ required=true
+/ mask = integer
+</textbox>
+
+
+<textbox t2>
+/ caption = "Can you describe what you saw in a few words? Use - instead of space e.g. blank-screen"
+/ maxchars = 100
+/ position = (values.first_col, values.radiobuttons_offset + 2*values.radiobuttons_gap + 5)
+/ textboxsize = (values.textbox_width, values.textbox_height)
+/ multiline = true
+/ required=false
+/ mask = ^([a-zA-Z-]+)$
+</textbox>

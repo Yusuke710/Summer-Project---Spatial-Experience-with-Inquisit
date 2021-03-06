@@ -1,0 +1,672 @@
+﻿<usermanual>
+						
+									NATURAL SCENE GIST DESCRIPTORS GENERATION
+SCRIPT INFO
+
+Script Author: Yusuke (This script is based on the diary script from Millisecond Software)
+last updated: 07/03/21 by Yusuke Miyashita (ymiy0005@student.monash.edu)
+
+
+DEPENDENT FILEs : 
+Calibaration.iqx: has information about calibration images, instruction before stimulus
+include_surveypage_inputs.iqx: has information of question page
+include_participant_demographics.iqx: has inoformation about demographic page after the stimulus
+
+
+EXPERIMENTAL SET-UP
+* 20 pictures - order is determined randomly
+* pictures are presented for approximatelly 2s
+* Then a list of questions will appear in which participants can put their response
+
+EXPERIMENT STEPS
+1. experiment overview
+2. consent
+3. calibration
+4. practice trial
+5. real trial
+6. demographics
+7. thank you
+
+STIMULI
+can be edited under section Editable Stimuli
+
+INSTRUCTIONS
+can be edited under section Editable Instructions
+
+EDITABLE CODE:
+check below for (relatively) easily editable parameters, stimuli, instructions etc. 
+Keep in mind that you can use this script as a template and therefore always "mess" with the entire code to further customize your experiment.
+
+The parameters you can change are:
+
+/fixationduration:				duration for the fixation cross
+
+they are for "include_surveypage_inputs.iqx"
+/textbox_offset 
+/textbox_gap 
+/textbox_width 
+/textbox_height 
+/first_col 
+/second_col 
+/radiobuttons_offset 
+/radiobuttons_gap 
+/radiobuttons_textsize 
+
+
+
+</usermanual>
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+	EDITABLE STIMULI: change editable stimuli here
+**************************************************************************************************************
+**************************************************************************************************************
+
+<item practice_pictures>
+/1 = "64RandomDots.jpg"
+/2 = "32RandomDots.jpg"
+/3 = "16RandomDots.jpg"
+</item>
+
+<item blank>
+/1 = "0RandomDots.jpg"
+</item>
+
+<item randomdots>
+/1= "0RandomDots.jpg"
+/2="0RandomDots.jpg"
+/3="0RandomDots.jpg"
+/4= "0RandomDots.jpg"
+/5="0RandomDots.jpg"
+/6="0RandomDots.jpg"
+/7="1RandomDots.jpg"
+/8="2RandomDots.jpg"
+/9="4RandomDots.jpg"
+/10="8RandomDots.jpg"
+/11="16RandomDots.jpg"
+/12="32RandomDots.jpg"
+/13= "64RandomDots.jpg"
+/14="128RandomDots.jpg"
+/15="20RandomDotsLine.jpg"
+/16= "30RandomDotsLine.jpg"
+/17="40RandomDotsLine.jpg"
+/18= "50RandomDotsLine.jpg"
+/19="60RandomDotsLine.jpg"
+/20="70RandomDotsLine.jpg"
+</item>
+
+**************************************************************************************************************
+**************************************************************************************************************
+	EXTERNAL FILES
+**************************************************************************************************************
+**************************************************************************************************************
+
+<include>
+/ file = "Calibration.iqx"
+</include>
+
+<include>
+/file = "include_surveypage_inputs.iqx"
+</include>
+
+<include>
+/file = "include_participant_demographics.iqx"
+</include>
+
+<htmlpage intro>
+/ file = "experiment_overview.html"
+</htmlpage>
+
+htmlpage exp_instructions>
+/ file = "exp_instructions.html"
+</htmlpage>
+
+<htmlpage consent>
+/ file = "consent_form.html"
+</htmlpage>
+
+<htmlpage practice_prepage1>
+/ file = "practice_prepage1.html"
+</htmlpage>
+<htmlpage practice_prepage2>
+/ file = "practice_prepage2.html"
+</htmlpage>
+<htmlpage practice_prepage3>
+/ file = "practice_prepage3.html"
+</htmlpage>
+<htmlpage practice_prepage4>
+/ file = "practice_prepage4.html"
+</htmlpage>
+
+<htmlpage block1_prepage>
+/ file = "real_prepage.html"
+</htmlpage>
+
+
+
+<htmlpage thanks>
+/ file = "complete.html"
+</htmlpage>
+
+<htmlpage complete_block>
+/ file = "complete_block.html"
+</htmlpage>
+
+
+
+
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+	EDITABLE INSTRUCTIONS: change instructions here
+**************************************************************************************************************
+**************************************************************************************************************
+/ nextkey(28) makes participants press [Enter] to proceed
+<instruct>
+/ fontstyle = ("Arial", 3%, false, false, false, false, 5, 1)
+/ nextkey = (28)
+</instruct>
+
+<item directions>
+/1 = "Reffering to the image that you just saw, please answer the following questions. You are required to answer all questions"
+</item>
+
+<item labels>
+/1 = "Words"
+/2 = "Confidence Ratings"
+</item>
+
+**************************************************************************************************************
+**************************************************************************************************************
+	DEFAULTS
+**************************************************************************************************************
+**************************************************************************************************************
+script requires Inquisit 5.0.0.0 or higher
+
+<defaults>
+/canvasaspectratio = (4,3)
+/ windowsize = (200, 100)
+/minimumversion = "5.0.0.0"
+/ txcolor = white
+/ screencolor = black
+/ fontstyle = ("Arial", 1.75%, false, false, false, false, 5, 1)
+</defaults>
+
+**************************************************************************************************************
+**************************************************************************************************************
+	DATA
+**************************************************************************************************************
+**************************************************************************************************************
+
+Note: data file explanations under User Manual Information at the top
+
+********************
+raw data
+********************
+
+<data>
+/ separatefiles = true
+/ columns = (build, date, time, subject, blockcode, blocknum, trialcode, trialnum, stimulusonset, values.est_soa, values.est_soa2, values.est_soa3, values.est_soa4, values.est_soa5, values.img_num, values.img_file, values.soa, values.completion_code, response, latency,
+values.OLIFE_subscale_1_score, values.OLIFE_subscale_2_score, values.OLIFE_subscale_3_score, values.OLIFE_subscale_4_score)
+</data>
+
+********************
+summary data
+********************
+
+<summarydata>
+/columns = (script.startdate, script.starttime, script.subjectid, script.groupid, script.elapsedtime, computer.platform, computer.os, computer.countrycode, values.completed, parameters.experiment_id)
+/ separatefiles = true
+</summarydata>
+
+*******************************************************************************************************************
+*******************************************************************************************************************
+	VALUES: automatically updated
+*******************************************************************************************************************
+*******************************************************************************************************************
+/completed:				0 = script was not completed; 1 = script was completed (all conditions run)
+/essay:					stores the essay number (= picture itemnumber)
+
+<values>
+/completed = 0
+/img_num = 0
+/img_file = ""
+/soa = 0
+/completion_code = ""
+/trial_start = 0
+/est_soa = 0
+/est_soa2 = 0
+/est_soa3 = 0
+/est_soa4 = 0
+/est_soa5 = 0
+</values>
+
+**************************************************************************************************************
+**************************************************************************************************************
+	STIMULI
+**************************************************************************************************************
+**************************************************************************************************************
+
+Note: this picture element controls the selection of the to be presented picture
+/select = noreplace => selects the pictures randomly without replacement
+if a sequential order is preferred => /select = sequential
+
+picture brief>
+/items = picset_133_1_02
+/select = noreplacenorepeat
+/position = (50%, 50%)
+/ width = 100
+/ height = 100
+/size = (80%, 80%)
+</picture>
+
+picture speed>
+/items = picset_133_1_02
+/select = noreplacenorepeat
+/position = (50%, 50%)
+/ width = 100
+/ height = 100
+/size = (80%, 80%)
+</picture>
+
+<picture randomdots>
+/items = randomdots
+/select = noreplacenorepeat
+/position = (50%, 50%)
+/ width = 100
+/ height = 100
+/size = (80%, 80%)
+</picture>
+
+<picture practice_stimuli>
+/items = practice_pictures
+/select = noreplacenorepeat
+/position = (50%, 50%)
+/ width = 100
+/ height = 100
+/size = (80%, 80%)
+</picture>
+
+<picture blank>
+/items = ("<%item.blank.item(1)%>")
+/position = (50%, 50%)
+/ width = 100
+/ height = 100
+/size = (80%, 80%)
+</picture>
+
+<text fixation_cross>
+/ items = ("+")
+/ txcolor = white
+/ txbgcolor = black
+/ vposition = 50%
+/ hposition = 50%
+/ fontstyle = ("Arial", 9%)
+</text>
+
+<text survey_error2>
+/ items= ("error = <% surveypage.word_generation.error %>")
+/ fontstyle = ("Arial", 1.74%, true, false, false, false, 5, 0)
+/ txbgcolor = white
+/ txcolor = red
+</text>
+
+/this needs updating 
+<text survey_error>
+/ items= ("Error - Please enter 5 words and their confidence ratings.")
+/ fontstyle = ("Arial", 1.5%, true, false, false, false, 5, 0)
+/ txbgcolor = white
+/ txcolor = red
+/ position = (50%, 50%)
+</text>
+
+<text completion_code>
+/items = ("Your Amazon Mechanical Turk Code: <%values.completion_code%>")
+/position = (50, 20)
+/halign = center
+/ valign = center
+/ hjustify = center
+/ vjustify = center
+/ txbgcolor = (0, 0, 0)
+/ fontstyle = ("Arial", 4.13%, false, false, false, false, 5, 0)
+/ txcolor = (255, 0, 0)
+</text>
+
+<text completion_code_instruction>
+/items = ("Please record/copy this completion code and paste it back to the Amazon Mechnical Turk Page.~nThank you again for participating in our study!~n~nPress <space> to end this experiment.")
+/position = (50, 40)
+/ txbgcolor = (0, 0, 0)
+/ fontstyle = ("Arial", 2%, false, false, false, false, 5, 0)
+/ txcolor = (255, 255, 255)
+</text>
+
+**************************************************************************************************************
+**************************************************************************************************************
+	EDITABLE PARAMETERS: change editable parameters here
+**************************************************************************************************************
+**************************************************************************************************************
+
+<parameters>
+/fixationduration = 1000		
+/is_mturk = true
+/experiment_id = "yusuke_BATCH_V1_133_1_02_MT"
+/skip_practice = false
+/skip_demographics = false
+/show_completion_block = false
+</parameters>
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+	TRIALS
+**************************************************************************************************************
+**************************************************************************************************************
+note: these are the parameters for the survey page 
+<values>
+/textbox_offset = 20
+/textbox_gap = 5
+/textbox_width = 20
+/textbox_height = 4
+/first_col = 15
+/second_col = 38
+
+/radiobuttons_offset = values.textbox_offset
+/radiobuttons_gap = 15
+/radiobuttons_textsize = 3%
+
+/OLIFE_subscale_1_score = 0
+/OLIFE_subscale_2_score = 0
+/OLIFE_subscale_3_score = 0
+/OLIFE_subscale_4_score = 0		
+</values>
+
+NOTE: word_generation is where we question the applicants after they see the stimulus
+NOTE: questions are in "include_surveypage_inout.iqx"
+<surveypage word_generation>
+/caption = "<% item.directions.item(1) %>"
+/ fontstyle =  ("Arial", 3%)
+/ showquestionnumbers = true
+/ showpagenumbers = false
+/ questions = [1=rb2; 2=t1; 3=t2;]
+/ navigationbuttonsize = (20, 4)
+/ navigationbuttonfontstyle = ("Arial", 2%, true, false, false, false, 5, 0)
+/ nextbuttonposition = (70%, values.textbox_offset + 11*values.textbox_gap)
+/ finishlabel = "Next Trial"
+/ response = correct
+</surveypage>
+
+<surveypage demographic_page>
+/ caption = "You have now finished the survey. Before you complete the experiment, we would like you to complete the following questions please."
+/ fontstyle =  ("Arial", 3%)
+/ showquestionnumbers = false
+/ showpagenumbers = false
+/ questions = [1=sex; 2=age; 3=nationality; 4=education; 5=first_language; 6=second_language; 7=number_of_years_english_speaking]
+/ navigationbuttonsize = (20, 4)
+/ navigationbuttonfontstyle = ("Arial", 2%, true, false, false, false, 5, 0)
+/ nextbuttonposition = (35%,  values.demo_starting_y_offset + 10*values.demo_gap)
+/ response = correct
+/ finishlabel = "Complete"
+</surveypage>
+
+<trial error>
+/ stimulusframes = [1 = survey_error]
+/ timeout = 1000
+</trial>
+
+**************************************************************************************************************
+	PRACTICE TRIALS
+**************************************************************************************************************
+<trial practice_random>
+/ stimulustimes = [
+	0 = blank;
+	500 = fixation_cross;
+	1200 = practice_stimuli;
+	1700 = blank;
+]
+/ timeout = 2200
+/branch = [surveypage.word_generation]
+/ontrialend = [
+	values.img_num = picture.practice_stimuli.currentvalue;
+	values.img_file = picture.practice_stimuli.currentitem;
+	values.soa = 67;
+	
+]
+/ recorddata = false
+</trial>
+
+**************************************************************************************************************
+	REAL TRIALS
+**************************************************************************************************************
+
+
+Note: 
+trial brief>
+/ stimulustimes = [
+	0 = blank;
+	500 = fixation_cross;
+	1200 = brief;
+	1700 = blank;
+]
+/ timeout = 2200
+
+/branch = [surveypage.word_generation]
+/ recorddata = true
+</trial>
+
+trial speed>
+/ stimulustimes = [
+	0 = blank;
+	500 = fixation_cross;
+	1200 = speed;
+	1400 = blank;
+]
+/ timeout = 1900 
+
+/branch = [surveypage.word_generation]
+/ recorddata = true
+</trial>
+
+
+trial rampincrease>
+/ stimulustimes = [
+	0 = blank;
+	500 = fixation_cross;
+	1200 = ramp1;
+	1700 = ramp2;
+	2200 = ramp3;
+	2700 = ramp4;
+	3200 = ramp5;
+	3700 = blank;
+]
+/ timeout = 4200
+
+/branch = [surveypage.word_generation]
+/ recorddata = true
+</trial>
+
+trial rampdecrease>
+/ stimulustimes = [
+	0 = blank;
+	500 = fixation_cross;
+	1200 = ramp5;
+	1700 = ramp4;
+	2200 = ramp3;
+	2700 = ramp2;
+	3200 = ramp1;
+	3700 = blank;
+]
+/ timeout = 4200
+
+<trial randomdots>
+/ stimulustimes = [
+	0 = blank;
+	500 = fixation_cross;
+	1200 = randomdots;
+	1700 = blank;
+]
+/ timeout = 2200
+/branch = [surveypage.word_generation]
+/ontrialend = [
+	values.img_num = picture.randomdots.currentvalue;
+	values.img_file = picture.randomdots.currentitem;
+	values.soa = 133;
+	values.est_soa = picture.randomdots.stimulusonset.1 - picture.randomdots.stimulusonset.1;
+	values.est_soa2 = picture.randomdots.stimulusonset.1 - picture.randomdots.stimulusonset.1;
+	values.est_soa3 = picture.randomdots.stimulusonset.1 - picture.randomdots.stimulusonset.1;
+	values.est_soa4 = picture.randomdots.stimulusonset.1 - picture.randomdots.stimulusonset.1;
+	values.est_soa5 = picture.randomdots.stimulusonset.1 - picture.randomdots.stimulusonset.1;
+]
+/ recorddata = true
+</trial>
+
+**************************************************************************************************************
+	After TRIALS
+**************************************************************************************************************
+
+
+<trial mturk_completion_code>
+/ ontrialbegin = [values.completion_code=ipart(rand(1,99999))]
+/ stimulustimes = [0=completion_code, completion_code_instruction]
+/ inputdevice = keyboard
+/ correctresponse = (" ")
+/ skip = [parameters.is_mturk == false]
+</trial>
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+	BLOCKS
+**************************************************************************************************************
+**************************************************************************************************************
+
+<block intro>
+/ preinstructions = (intro)
+/ skip = [parameters.is_mturk == false]
+</block>
+
+<block consent>
+/ preinstructions = (consent)
+/ skip = [parameters.is_mturk == false]
+</block>
+
+<block calibration>
+/ trials = [1=Calibration_instruction_page1]
+/ screencolor = black
+</block>
+
+<picture PracticePrepareHTML1>
+/ items = ("PracticePrepareHTML1.png")
+/ size = (100%,100%)
+</picture>
+
+<picture PracticePrepareHTML2>
+/ items = ("PracticePrepareHTML2.png")
+/ size = (100%,100%)
+</picture>
+
+<picture PracticePrepareHTML3>
+/ items = ("PracticePrepareHTML3.png")
+/ size = (100%,100%)
+</picture>
+
+<picture PracticePrepareHTML4>
+/ items = ("PracticePrepareHTML4.png")
+/ size = (100%,100%)
+</picture>
+
+<picture RealPrepareHTML>
+/ items = ("RealPrepareHTML.png")
+/ size = (100%,100%)
+</picture>
+
+<trial practice_prepage1>
+/ stimulusframes = [1 = PracticePrepareHTML1]
+/ validresponse = (2)
+/ branch = [
+	trial.practice_prepage2
+]
+</trial>
+
+<trial practice_prepage2>
+/ stimulusframes = [1 = PracticePrepareHTML2]
+/ validresponse = (3)
+/ branch = [
+	trial.practice_prepage3
+]
+</trial>
+
+<trial practice_prepage3>
+/ stimulusframes = [1 = PracticePrepareHTML3]
+/ validresponse = (4)
+/ branch = [
+	trial.practice_prepage4
+]
+</trial>
+
+<trial practice_prepage4>
+/ stimulusframes = [1 = PracticePrepareHTML4]
+/ validresponse = (28)
+</trial>
+
+<trial real_prepage>
+/ stimulusframes = [1 = RealPrepareHTML]
+/ validresponse = (28)
+</trial>
+
+<block practice_prepare>
+/ trials = [1 = practice_prepage1 ]
+/ screencolor = black
+</block>
+
+<block practice_block1>
+/trials = [1-3 = noreplacenorepeat(practice_random)]
+</block>
+
+<block real_prepage>
+/ trials = [1 = real_prepage]
+/ screencolor = black
+</block>
+
+<block block1>
+/trials = [1-20 = noreplacenorepeat(randomdots)]
+</block>
+
+/I do not know which one is run, completion or completion_block
+<block completion>
+/trials = [1=mturk_completion_code]
+/ preinstructions = (thanks)
+/ skip = [parameters.show_completion_block == true]
+</block>
+
+
+<block completion_block>
+/ preinstructions = (complete_block)
+/ skip = [parameters.show_completion_block == false]
+</block>
+
+
+<block demographics>
+/trials = [1=demographic_page]	
+/ skip = [parameters.skip_demographics == true]
+</block>
+
+
+**************************************************************************************************************
+**************************************************************************************************************
+	EXPERIMENT
+**************************************************************************************************************
+**************************************************************************************************************
+
+NOTE: /blocks = [1 = intro; 2 = consent; 3 = practice_block; 4 = block1; 5 = demographics; 6 = completion]
+
+Note: "include_blocks_standard.iqx" has info about which trials to run for which block
+<expt>
+/onexptend = [values.completed = 1]
+/blocks = [ 1 = intro; 2 = consent; 3 = calibration; 4 = practice_prepare; 5 = practice_block1; 6 = real_prepage; 7 = block1; 8 = demographics; 9 = completion_block; 10 = completion]
+</expt>
+
+**************************************************************************************************************
+												End of File
+**************************************************************************************************************
